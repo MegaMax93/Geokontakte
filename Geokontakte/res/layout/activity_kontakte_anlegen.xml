@@ -1,0 +1,65 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name_anlegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="@dimen/zehn_pt" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/vorname_anlegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vorname"
+        android:textSize="@dimen/zehn_pt" />
+
+    <EditText
+        android:id="@+id/vorname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/handynummern_anlegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/handynummer"
+        android:textSize="@dimen/zehn_pt" />
+
+    <EditText
+        android:id="@+id/handy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:phoneNumber="true" />
+
+    <Button
+        android:id="@+id/speichern_anlegen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/speichern"
+        android:onClick="kontaktAnlegen" />
+
+    <Button
+        android:id="@+id/leeren_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leeren"
+        android:onClick="felderLeeren" />
+
+</TableLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kontakt_erstellen_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/kontakt_erstellen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="kontakteAnlegen"
+        android:text="@string/kontakte_anlegen" />
+
+    <Button
+        android:id="@+id/konakte_zeigen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kontakte_anzeigen"
+        android:onClick="kontakteAnzeigen" />
+
+    <Button
+        android:id="@+id/pos_karte_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pos_auf_karte" />
+
+    <Button
+        android:id="@+id/pos_uebermitteln"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pos_uebermitteln" />
+
+    <ImageView
+        android:id="@+id/pin_fahne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="pin"
+        android:src="@drawable/pin_fahne_100" />
+
+</LinearLayout>
