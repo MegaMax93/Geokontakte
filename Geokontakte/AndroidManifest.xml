@@ -8,9 +8,10 @@
         android:targetSdkVersion="15" />
 
     <application
+        android:name="KontaktSpeicher"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" android:name="KontaktSpeicher">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".Startmenu"
             android:label="@string/title_activity_startmenu" >
@@ -27,6 +28,15 @@
         <activity
             android:name=".Kontakte_anlegen"
             android:label="@string/title_activity_kontakte_anlegen" >
+        </activity>
+        <activity
+            android:name=".Kontakt"
+            android:label="@string/title_activity_kontakt" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

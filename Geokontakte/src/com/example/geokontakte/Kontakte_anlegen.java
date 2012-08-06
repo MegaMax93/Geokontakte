@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
@@ -39,4 +41,13 @@ public class Kontakte_anlegen extends Activity {
     	vorname.setText("");
     	nummer.setText("");
     }
+	public boolean onOptionsItemSelected(MenuItem item){
+		switch(item.getItemId()){
+		case R.id.kontakt_anlegen_kAnzeigen: 
+			startActivity(new Intent(this,Kontakte_anzeigen.class));
+			System.out.println("sfsdf");
+			return true;
+		default: return super.onOptionsItemSelected(item);
+		}
+	}
 }

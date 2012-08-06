@@ -4,7 +4,11 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.content.ClipData.Item;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -36,5 +40,19 @@ public class Kontakte_anzeigen extends Activity {
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, android.R.id.text1, liste);
 		listView.setAdapter(adapter);
+	}
+
+	public void kontakteAnlegen(View view){
+	    	Intent intent =new Intent(this,Kontakte_anlegen.class);
+	    	startActivity(intent);
+	}
+	public boolean onOptionsItemSelected(MenuItem item){
+		switch(item.getItemId()){
+		case R.id.kontakt_zeigen_kAnlegen: 
+			startActivity(new Intent(this,Kontakte_anlegen.class));
+			System.out.println("sfsdf");
+			return true;
+		default: return super.onOptionsItemSelected(item);
+		}
 	}
 }

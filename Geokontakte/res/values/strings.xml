@@ -19,5 +19,6 @@
     <string name="handynummer">Handynummer:</string>
     <string name="speichern">Speichern</string>
     <string name="leeren">Leeren</string>
+    <string name="title_activity_kontakt">Kontakt</string>
 
 </resources>
